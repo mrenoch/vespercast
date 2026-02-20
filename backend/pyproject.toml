@@ -1,0 +1,16 @@
+[project]
+name = "vespercast-backend"
+version = "0.1.0"
+description = "VesperCast sunset quality prediction API"
+requires-python = ">=3.12"
+dependencies = [
+    "astral>=3.2",
+    "django==5.1.*",
+    "django-cors-headers>=4.9.0",
+    "django-q2>=1.9.0",
+    "djangorestframework>=3.16.1",
+    "gdal==3.7.3",
+    "geopy>=2.4.1",
+    "httpx>=0.28.1",
+    "python-decouple>=3.8",
+]

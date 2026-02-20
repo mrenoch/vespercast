@@ -1,0 +1,69 @@
+.container {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.form {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.input {
+  flex: 1;
+  min-width: 200px;
+  padding: 0.75rem 1rem;
+  border: 2px solid #e2e8f0;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  background: rgba(255, 255, 255, 0.9);
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+.input:focus {
+  border-color: #f97316;
+}
+
+.searchBtn,
+.geoBtn {
+  padding: 0.75rem 1.25rem;
+  border: none;
+  border-radius: 0.5rem;
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition: opacity 0.2s, transform 0.1s;
+}
+
+.searchBtn:disabled,
+.geoBtn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.searchBtn {
+  background: #f97316;
+  color: white;
+  font-weight: 600;
+}
+
+.searchBtn:not(:disabled):hover {
+  background: #ea6a0a;
+}
+
+.geoBtn {
+  background: rgba(255, 255, 255, 0.85);
+  color: #374151;
+  border: 2px solid #e2e8f0;
+}
+
+.geoBtn:not(:disabled):hover {
+  background: white;
+}
+
+.error {
+  margin-top: 0.5rem;
+  color: #ef4444;
+  font-size: 0.9rem;
+}
